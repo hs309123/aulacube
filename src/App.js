@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import CommentList from "./components/CommentList";
 
-function App() {
+export default function App() {
+  // console.log(ApiData.comments);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-full w-full bg-neutral-900 text-neutral-50">
+      <h1>Hello cmnt</h1>
+      <CommentList />
     </div>
   );
 }
-
-export default App;
