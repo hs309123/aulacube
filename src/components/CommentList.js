@@ -15,7 +15,7 @@ const CommentList = () => {
     setSortBy("date");
   };
   return (
-    <div className="flex flex-col h-auto w-auto lg:m-32 md:m-16 sm:m-2 ">
+    <div className="flex flex-col lg:m-32 md:m-16 sm:m-2 ">
       <h1 className="block text-lg font-medium leading-6 text-gray-100 my-4">
         What's on your mind?
       </h1>
@@ -26,8 +26,8 @@ const CommentList = () => {
               id="about"
               name="about"
               rows={4}
-              className="block w-full rounded-md border-0 py-1.5 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              defaultValue={"Type something"}
+              className="block w-full rounded-md border-0 p-2 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              placeholder="Type Something"
             />
           </div>
           <div className="flex justify-end my-4">
@@ -48,9 +48,8 @@ const CommentList = () => {
         <div className="flex gap-4">
           <button
             onClick={sortByDatePosted}
-            className={`py-1 px-8 bg-gray-100 text-slate-800 font-semibold rounded-lg hover:bg-gray-200 hover:text-black ${
-              sortBy === "date" ? "bg-gray-200" : ""
-            }`}
+            className={`py-1 px-8 bg-gray-100 text-slate-800 font-semibold rounded-lg hover:bg-gray-200 hover:text-black ${sortBy === "date" ? "bg-gray-200" : ""
+              }`}
           >
             Date posted
           </button>
